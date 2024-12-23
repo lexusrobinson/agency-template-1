@@ -1,0 +1,20 @@
+//
+// contact.scss
+//
+
+.form-control {
+  height: 46px;
+  border: 1px solid rgba($muted, 0.2);
+  font-size: 14px;
+
+  &:focus {
+    border-color: $primary;
+    outline: 0;
+    box-shadow: none;
+  }
+
+}
+
+textarea.form-control {
+  min-height: calc(1.5rem + 3.75rem + 2px) !important;
+}

@@ -1,0 +1,120 @@
+//
+// menu.scss
+//
+
+.navbar {
+    transition: all 0.5s ease;
+    padding: 15px 0;
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $dark;
+                font-size: 0.9rem;
+                background-color: transparent;
+                margin: 0 10px;
+                transition: all 0.3s ease;
+                font-family: $font-family-base;
+                &:hover,
+                &:active,
+                &.active {
+                    color: $primary !important;
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        padding: 0px;
+        border: none;
+        font-size: 24px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .navbar-brand {
+        &.logo {
+            color: $white !important;
+            font-weight: 700;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+// Navbar-light
+.navbar-light {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $dark !important;
+            }
+        }
+    }
+}
+
+//nav-sticy
+.nav-sticky {
+    &.navbar {
+        background: $white;
+        margin-top: 0px;
+        box-shadow: $box-shadow-md;
+    }
+    .navbar-brand {
+        &.logo {
+            color: $dark !important;
+        }
+    }
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $dark !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+  
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        background-color: $black;
+
+        .mdi {
+            color: $white !important;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link{
+                    color: $white !important;
+                }
+            }
+        }
+    }
+
+    .nav-sticky {
+        &.navbar {
+            background: $black;
+            margin-top: 0px;
+            box-shadow: $box-shadow-md;
+
+        }
+        .navbar-brand{
+            &.logo{
+                color: $white !important;
+            }
+        }
+    }
+}

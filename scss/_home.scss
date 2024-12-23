@@ -1,0 +1,157 @@
+//
+// home.scss
+//
+
+
+.bg-home-half {
+  background-size: cover;
+  background-position: center center;
+  padding: 300px 0px 250px;
+  position: relative;
+
+  .home-center {
+    display: table;
+    width: 100%;
+    height: 100%;
+
+    
+  .home-title {
+    font-size: 42px;
+  }
+
+  .home-desc {
+    max-width: 700px;
+  }
+
+  }
+
+}
+
+
+/********* DEMO 2 ********/
+
+.home-registration-form {
+  border-radius: 3px;
+
+  .registration-form label {
+    font-size: 13px;
+  }
+
+  .registration-input-box {
+    border-bottom: 1px solid rgba($muted, 0.3);
+    box-shadow: none !important;
+
+    &:focus {
+      border-color: $primary;
+    }
+  }
+
+}
+
+
+/*******DEMO 3*******/
+
+
+
+.bg-hero3 {
+  padding: 250px 0;
+
+  input {
+    padding: 14px 20px;
+    width: 100%;
+    font-size: 17px;
+    color: $muted !important;
+    border: none;
+    outline: none !important;
+    padding-right: 160px;
+    padding-left: 30px;
+    background-color: rgba($white, 0.85);
+    border-radius: 5px;
+  }
+
+  .subcribe-form button {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    outline: none !important;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 12px 30px;
+  }
+
+  .subcribe-form form {
+    position: relative;
+    max-width: 600px;
+    margin: 0px auto;
+  }
+}
+
+
+/********DEMO 4**********/
+
+
+.bg-hero4 {
+  padding-top: 200px;
+  padding-top: 165 px;
+  background: linear-gradient(rgb(72, 85, 99), rgb(41, 50, 60));
+  position: relative;
+
+  .mac-image {
+    position: relative;
+    bottom: -100px;
+  }
+
+}
+
+
+
+/********DEMO 5**********/
+
+.bg-hero5 {
+  padding: 300px 0 100px 0;
+}
+
+.client-logo {
+  padding-top: 140px;
+}
+
+.home-slider {
+  position: relative;
+
+  .carousel {
+    height: 100vh;
+    width: 100%;
+
+    .carousel-item {
+      height: 100vh;
+      width: 100%;
+      background-position: center center;
+      background-size: cover;
+
+    }
+
+    .carousel-control-next {
+      width: 6%;
+    }
+
+    .carousel-control-prev {
+      width: 6%;
+    }
+  }
+  
+}
+
+@media (max-width:992px) {
+
+  .bg-home-half{
+    padding: 200px 0px 100px;
+  }
+
+  .bg-hero5 {
+    padding: 150px 0 50px 0;
+  }
+
+  .client-logo {
+    padding-top: 50px;
+  }
+}

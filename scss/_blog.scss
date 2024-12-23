@@ -1,0 +1,37 @@
+//
+//Blog.scss
+//
+
+.blog-menu{
+    img {
+        border-radius: 5px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+
+    .blog-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: $dark;
+
+        &:hover{
+            color: $primary;
+            transition: all 0.5s;
+        }
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .read-btn {
+        font-size: 15px;
+        color: $primary;
+        text-decoration: underline !important;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+//
+//features.scss
+//
+
+.features {
+    h5 {
+        font-size: 22px;
+        height: 56px;
+        width: 56px;
+        line-height: 56px;
+        border-radius: 50%;
+        border: 1px solid $primary;
+        text-align: center;
+        display: inline-block;
+        font-weight: 600;
+        border-right: 4px solid $primary;
+    }
+
+    h4 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+///// styles
+
+
+.services-blog {
+    padding: 40px;
+    background-color: $white;
+    box-shadow: $box-shadow-md;
+
+    .service-head {
+        overflow: hidden;
+    }
+
+    img {
+        max-width: 45px;
+        float: left;
+        margin-right: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

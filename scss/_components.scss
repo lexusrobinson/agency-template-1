@@ -1,0 +1,57 @@
+//
+// components.scss
+//
+
+.btn {
+  padding: 12px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.5s;
+  border: 1px solid $dark;
+  overflow: hidden;
+  position: relative;
+}
+
+// btn-size
+.btn-sm {
+  padding: 8px 25px;
+  font-size: 14px;
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    background: #{$value};
+    border-color: #{$value} !important;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.focus,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled):active:focus,
+    .open > .dropdown-toggle.btn-primary {
+     background-color: $primary !important;
+    }
+  }
+  
+  .btn-outline-#{$color} {
+    color: #{$value};
+    border-color: #{$value};
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.focus,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled):active:focus,
+    .open > .dropdown-toggle.btn-primary {
+      background-color: $white !important;
+    }
+  }
+}
+
+.btn-white:hover {
+  background: $white !important;
+}
+
